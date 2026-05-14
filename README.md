@@ -196,7 +196,7 @@ ml_model/notebooks/model_training_notebook.ipynb
 
 Full Stack Developer • AI/ML Enthusiast • Cloud & Backend Development
 
-<p align="left">
+
 
 <a href="mailto:reddypurushothama257@gmail.com" target="blank">
 <img align="center" src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email" height="40" width="40" />
@@ -214,5 +214,5 @@ Full Stack Developer • AI/ML Enthusiast • Cloud & Backend Development
 <img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" height="40" width="40" />
 </a>
 
-</p>
+
 ---
