@@ -1,5 +1,5 @@
 
-# AgroScan AI
+# AgroScan
 
 **AI-Powered Plant Disease Detection — Serverless, Cloud-Native, Production-Ready**
 
