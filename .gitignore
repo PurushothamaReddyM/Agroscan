@@ -1,0 +1,61 @@
+# ---- Global ----
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+
+# ---- Python (ml_model/) ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter / Notebooks
+*.ipynb_checkpoints
+
+# Virtual envs / build
+ml_model/temp_lambda/
+ml_model/temp_lambda_package/
+ml_model/uploads/
+ml_model/data/
+ml_model/notebooks/
+# Exception: Allow specific training notebook
+!ml_model/notebooks/train_model_torch.ipynb
+ml_model/function_package/
+
+# Secrets / Keys
+ml_model/.env
+ml_model/*.pem
+
+# Model files (optional: keep if training, ignore if only serving ONNX)
+ml_model/models/
+ml_model/agroscan_lambda.zip
+ml_model/function.zip
+ml_model/temp_base64.txt
+ml_model/temp.jpg
+ml_model/payload.json
+
+# ---- Node / Frontend (frontend/) ----
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.DS_Store
+
+# Build caches
+*.cache
+.npm/
+.yarn/
+.pnpm/
+
+# ---- Root ----
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
