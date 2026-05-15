@@ -18,7 +18,7 @@ AgroScan is a deep learning-based plant disease detection platform designed to a
 8. [Model Training](#-model-training)
 9. [Future Improvements](#-future-improvements)
 10. [Author](#-author)
-11. [License](#-license)
+
 
 ---
 
