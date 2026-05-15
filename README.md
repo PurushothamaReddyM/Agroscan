@@ -53,7 +53,7 @@ AgroScan is a deep learning-based plant disease detection platform designed to a
 
 ---
 
-# 🏗️ Architecture
+#  Architecture
 
 <img width="1024" height="1024" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/216825b3-38f8-45cf-b48f-3c483e6b4c6b" />
 
@@ -190,7 +190,7 @@ ml_model/notebooks/model_training_notebook.ipynb
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 ### Purushothama Reddy M
 
