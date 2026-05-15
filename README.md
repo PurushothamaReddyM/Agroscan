@@ -43,51 +43,27 @@ AgroScan is a deep learning-based plant disease detection platform designed to a
 
 # 📸 Screenshots
 
-## 📝 Plant Selection & Image Upload
+## 🌿 User Interface
 
-<p align="center">
-  <img src="images/register.png" width="900"/>
-</p>
+<img width="1918" height="1012" alt="UI Screenshot" src="https://github.com/user-attachments/assets/aaa36c1f-b36c-463e-850b-3161cd32ccc0" />
 
 ---
 
-## 🔍 Disease Prediction Interface
+## 🔍 Disease Detection Results
 
-<p align="center">
-  <img src="images/login.png" width="900"/>
-</p>
+<img width="1913" height="1008" alt="Prediction Screenshot" src="https://github.com/user-attachments/assets/857c7f4b-b56c-4313-9f85-3d4339767b57" />
 
 ---
 
-## 📊 Top-5 Prediction Confidence Results
+## 📊 Model Accuracy Curve
 
-<p align="center">
-  <img src="images/otpverify.png" width="900"/>
-</p>
-
----
-
-## 🧠 AI Prediction & Confidence Visualization
-
-<p align="center">
-  <img src="images/faceverandotp.png" width="900"/>
-</p>
-
----
-
-## 🔒 Cloud-Based Inference Pipeline
-
-<p align="center">
-  <img src="images/dataencry.png" width="900"/>
-</p>
+<img width="1263" height="682" alt="Accuracy Curve" src="https://github.com/user-attachments/assets/23a448fb-d7ab-4a5c-89e0-02dde545a1e6" />
 
 ---
 
 # 🏗️ System Architecture
 
-<p align="center">
-  <img src="images/architecture.png" width="1000"/>
-</p>
+<img width="1024" height="1024" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/216825b3-38f8-45cf-b48f-3c483e6b4c6b" />
 
 ### Architecture Overview
 
@@ -132,7 +108,6 @@ AgroScan/
 │   ├── verify_onnx.py
 │   └── notebooks/
 │
-├── images/
 ├── README.md
 └── .gitignore
 ```
