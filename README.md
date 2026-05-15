@@ -1,24 +1,23 @@
 # 🌿 AgroScan
 
-**AI-Powered Plant Disease Detection Platform — Cloud-Native, Scalable, and Production-Ready**
+**AI-Powered Plant Disease Detection Platform — Cloud-Native and Scalable**
 
-AgroScan is a deep learning-based plant disease detection platform designed to assist farmers and researchers with fast and reliable crop diagnosis. The platform combines a modern React frontend, FastAPI backend, and AWS serverless infrastructure for scalable real-time predictions.
+AgroScan is a deep learning-based plant disease detection platform designed to assist farmers and researchers with fast and reliable crop diagnosis. The platform combines a modern React frontend, serverless Python backend, ONNX-based inference pipeline, and AWS cloud infrastructure for scalable real-time disease prediction.
 
 ---
 
 # 📑 Table of Contents
 
-1. [Live Demo](#-live-demo)
-2. [Features](#-features)
-3. [Screenshots](#-screenshots)
-4. [Architecture](#architecture)
-5. [Tech Stack](#-tech-stack)
-6. [Project Structure](#-project-structure)
-7. [Setup & Deployment](#-setup--deployment)
-8. [Model Training](#-model-training)
-9. [Future Improvements](#-future-improvements)
-10. [Author](#author)
-
+1. [🚀 Live Demo](#-live-demo)
+2. [✨ Features](#-features)
+3. [📸 Screenshots](#-screenshots)
+4. [🏗️ System Architecture](#️-system-architecture)
+5. [🛠️ Tech Stack](#️-tech-stack)
+6. [📂 Project Structure](#-project-structure)
+7. [⚙️ Setup & Deployment](#️-setup--deployment)
+8. [🤖 Model Training & ONNX Conversion](#-model-training--onnx-conversion)
+9. [🚧 Future Improvements](#-future-improvements)
+10. [👨‍💻 Author](#author)
 
 ---
 
@@ -30,38 +29,72 @@ AgroScan is a deep learning-based plant disease detection platform designed to a
 
 # ✨ Features
 
-- 🌱 Instant plant disease prediction from uploaded images
-- 🧠 Deep learning model trained on 38+ crop disease classes
-- ⚡ FastAPI backend deployed using AWS Lambda and Docker
-- ☁️ Cloud-native serverless architecture with AWS services
-- 🎨 Modern responsive frontend built with React and Tailwind CSS
-- 🔄 Automated CI/CD workflows using GitHub Actions
-- 📈 Optimized for scalability, performance, and reliability
+- 🌱 AI-powered plant disease detection from uploaded crop images
+- 🧠 Vision Transformer (ViT) based classification model
+- 📊 Top-5 prediction confidence visualization
+- ⚡ Serverless ONNX inference pipeline using AWS Lambda
+- ☁️ Cloud-native deployment using AWS services
+- 🖼️ Drag-and-drop image upload with real-time preview
+- 🎨 Modern responsive frontend using React and Bootstrap
+- 🐳 Dockerized backend deployment for scalability
+- 🔍 Optimized inference using ONNX Runtime
 
 ---
 
 # 📸 Screenshots
 
-## 🌿 User Interface
-<img width="1918" height="1012" alt="UI Screenshot" src="https://github.com/user-attachments/assets/aaa36c1f-b36c-463e-850b-3161cd32ccc0" />
+## 📝 Plant Selection & Image Upload
 
-## 🔍 Disease Detection Results
-<img width="1913" height="1008" alt="Prediction Screenshot" src="https://github.com/user-attachments/assets/857c7f4b-b56c-4313-9f85-3d4339767b57" />
-
-## 📊 Model Accuracy Curve
-<img width="1263" height="682" alt="Accuracy Curve" src="https://github.com/user-attachments/assets/23a448fb-d7ab-4a5c-89e0-02dde545a1e6" />
+<p align="center">
+  <img src="images/register.png" width="900"/>
+</p>
 
 ---
 
-#  Architecture
+## 🔍 Disease Prediction Interface
 
-<img width="1024" height="1024" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/216825b3-38f8-45cf-b48f-3c483e6b4c6b" />
+<p align="center">
+  <img src="images/login.png" width="900"/>
+</p>
+
+---
+
+## 📊 Top-5 Prediction Confidence Results
+
+<p align="center">
+  <img src="images/otpverify.png" width="900"/>
+</p>
+
+---
+
+## 🧠 AI Prediction & Confidence Visualization
+
+<p align="center">
+  <img src="images/faceverandotp.png" width="900"/>
+</p>
+
+---
+
+## 🔒 Cloud-Based Inference Pipeline
+
+<p align="center">
+  <img src="images/dataencry.png" width="900"/>
+</p>
+
+---
+
+# 🏗️ System Architecture
+
+<p align="center">
+  <img src="images/architecture.png" width="1000"/>
+</p>
 
 ### Architecture Overview
 
-- AWS Amplify hosts the frontend application
-- API Gateway securely routes prediction requests
-- AWS Lambda runs FastAPI inside Docker containers
+- React frontend hosted using AWS Amplify
+- Image upload and prediction requests handled through AWS Lambda
+- Dockerized ONNX inference pipeline for scalable deployment
+- ONNX Runtime used for optimized AI inference
 - Amazon ECR stores backend container images
 - Modular cloud-native architecture enables scalability and reliability
 
@@ -71,11 +104,11 @@ AgroScan is a deep learning-based plant disease detection platform designed to a
 
 | Layer | Technologies & Tools |
 | :-- | :-- |
-| **Frontend** | React.js, Tailwind CSS, Vite, JavaScript, AWS Amplify |
-| **Backend** | FastAPI, Python, Docker, AWS Lambda, AWS API Gateway |
-| **Machine Learning** | TensorFlow, Keras, PyTorch, ONNX, OpenCV |
-| **Cloud & DevOps** | AWS Amplify, Amazon ECR, GitHub Actions, Docker, CloudWatch |
-| **Build Tools** | npm, ESLint, Vite |
+| **Frontend** | React.js, Vite, Bootstrap, JavaScript |
+| **Backend** | Python, AWS Lambda, Docker |
+| **Machine Learning** | PyTorch, timm, ONNX, ONNX Runtime, OpenCV |
+| **Cloud & Deployment** | AWS Amplify, Amazon ECR, AWS Lambda |
+| **Utilities** | NumPy, Pillow, REST APIs |
 
 ---
 
@@ -86,8 +119,8 @@ AgroScan/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
-│   │   ├── assets/
-│   │   └── config/
+│   │   ├── config/
+│   │   └── assets/
 │   ├── public/
 │   └── vite.config.js
 │
@@ -96,9 +129,10 @@ AgroScan/
 │   ├── app_lambda.py
 │   ├── requirements.txt
 │   ├── save_as_onnx.py
+│   ├── verify_onnx.py
 │   └── notebooks/
 │
-├── package.json
+├── images/
 ├── README.md
 └── .gitignore
 ```
@@ -130,7 +164,7 @@ npm run dev
 npm run build
 ```
 
-Frontend deployment is configured using AWS Amplify with automatic deployment from the GitHub main branch.
+Frontend deployment is configured using AWS Amplify.
 
 ---
 
@@ -141,11 +175,17 @@ cd ml_model
 pip install -r requirements.txt
 ```
 
-### Docker Build
+---
+
+## 4️⃣ Docker Build
 
 ```bash
 docker build -t agroscan .
 ```
+
+---
+
+## 5️⃣ Deploy Backend to AWS Lambda
 
 ### Push Docker Image to Amazon ECR
 
@@ -154,48 +194,57 @@ aws ecr get-login-password | docker login --username AWS --password-stdin
 docker push <your-ecr-url>/agroscan:latest
 ```
 
-### Deploy Backend
+### Configure Deployment
 
-- Deploy the Docker container to AWS Lambda
-- Configure API Gateway for secure API routing
+- Deploy Docker container to AWS Lambda
+- Configure Lambda function URL or API Gateway
 - Monitor logs using AWS CloudWatch
 
 ---
 
-# 🤖 Model Training
+# 🤖 Model Training & ONNX Conversion
 
-The deep learning model was trained using TensorFlow/Keras with image augmentation and normalization techniques for improved generalization.
+The plant disease classification model was trained using PyTorch and converted to ONNX format for optimized cloud inference.
 
-### Training Workflow
+### ONNX Conversion
 
 ```bash
-ml_model/notebooks/model_training_notebook.ipynb
+python save_as_onnx.py
 ```
 
-### Model Performance
+### ONNX Verification
 
-- ✅ 98%+ validation accuracy
-- 🌱 38+ plant disease classes
-- ⚡ Optimized inference pipeline for cloud deployment
+```bash
+python verify_onnx.py
+```
+
+### Model Features
+
+- ✅ Vision Transformer (`vit_tiny_patch16_224`)
+- 🌱 38 plant disease classes
+- ⚡ ONNX Runtime optimized inference
+- ☁️ Serverless deployment ready
 
 ---
 
 # 🚧 Future Improvements
 
-- Better handling for invalid image uploads
-- CLI support for model retraining
-- Enhanced UI feedback and confidence visualization
-- Expanded troubleshooting and deployment documentation
 - Multi-language support for farmers
+- Treatment recommendation system
+- Mobile application support
+- Real-time camera disease detection
+- Improved explainability using Grad-CAM
+- Expanded crop and disease dataset
 
 ---
 
-#  Author
+# Author
 
-### Purushothama Reddy M
+## M Purushothama Reddy
 
-Full Stack Developer • AI/ML Enthusiast • Cloud & Backend Development
-
+- B.Tech Computer Science Engineering Student
+- AI/ML & Full Stack Development Enthusiast
+- Interested in Cloud-Native AI Systems and Deployment Engineering
 
 <p align="left">
 
@@ -212,5 +261,3 @@ Full Stack Developer • AI/ML Enthusiast • Cloud & Backend Development
 </a>
 
 </p>
-
----
