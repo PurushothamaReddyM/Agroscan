@@ -8,24 +8,20 @@ AgroScan is a deep learning-based plant disease detection platform designed to a
 
 # 📑 Table of Contents
 
-1. [🚀 Live Demo](#-live-demo)
-2. [✨ Features](#-features)
-3. [📸 Screenshots](#-screenshots)
-4. [🏗️ System Architecture](#️-system-architecture)
-5. [🛠️ Tech Stack](#️-tech-stack)
-6. [📂 Project Structure](#-project-structure)
-7. [⚙️ Setup & Deployment](#️-setup--deployment)
-8. [🤖 Model Training & ONNX Conversion](#-model-training--onnx-conversion)
-9. [🚧 Future Improvements](#-future-improvements)
-10. [👨‍💻 Author](#author)
+
+1. [✨ Features](#-features)
+2. [📸 Screenshots](#-screenshots)
+3. [🏗️ System Architecture](#️-system-architecture)
+4. [🛠️ Tech Stack](#️-tech-stack)
+5. [📂 Project Structure](#-project-structure)
+6. [⚙️ Setup & Deployment](#️-setup--deployment)
+7. [🤖 Model Training & ONNX Conversion](#-model-training--onnx-conversion)
+8. [🚧 Future Improvements](#-future-improvements)
+9. [👨‍💻 Author](#author)
 
 ---
 
-# 🚀 Live Demo
 
-🔗 **[Try AgroScan](https://main.d3n8iyuxmo9pz7.amplifyapp.com/)**
-
----
 
 # ✨ Features
 
