@@ -3,7 +3,7 @@
 
 The model training implementation is provided in the Jupyter Notebook:
 
-**`ml_model/notebooks/train_model_torch.ipynb`**
+**`AgroScan_AI/ml_model/notebooks/train_model_torch.ipynb`**
 
 This notebook contains the training workflow for the AgroScan deep learning models, including **Swin Transformer Tiny** and **ConvNeXt Tiny**, along with model evaluation and performance analysis.
 
@@ -19,6 +19,7 @@ Source: Kaggle
 
 Dataset link: https://www.kaggle.com/datasets/emmarex/plantdisease
 
+The original dataset is approximately 660 MB in size, which exceeds GitHub's standard file upload limit. Therefore, instead of uploading the dataset directly to this repository, the publicly available Kaggle dataset link has been provided for download.
 ------------------------------------------------------------------------
 
 
