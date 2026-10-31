@@ -66,13 +66,14 @@ Dataset
 ## 🌿 User Interface
 
 
-<img width="1018" height="696" alt="Screenshot 2026-10-27 120613" src="https://github.com/user-attachments/assets/59c3b901-874a-45e7-b09f-240afb113f5a" />
+<img width="1018" height="696" alt="Screenshot 2026-10-27 120613" src="https://github.com/user-attachments/assets/7dc0ebc5-a339-4934-84cc-d1e6c16dec31" />
+
 
 ------------------------------------------------------------------------
 
 ## 🔍 Disease Detection Results
 
-<img width="812" height="1032" alt="Screenshot 2026-10-27 120756" src="https://github.com/user-attachments/assets/bc735b99-3bf6-45b0-af99-deb3d5755279" />
+<img width="812" height="1032" alt="Screenshot 2026-10-27 120756" src="https://github.com/user-attachments/assets/1be8d79f-5520-4d99-af2e-062a02fed5c9" />
 
 
 ------------------------------------------------------------------------
